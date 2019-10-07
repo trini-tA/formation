@@ -26,3 +26,6 @@ Route::get('/404', function () {
 Route::get('/coming-soon', function () {
     return view('comingsoon::comingsoon');
 });
+
+Route::get('/web-status', 'WebStatusController@index' )->name('web-status');
+Route::get('/api/block/{name}', 'BlockController@index' )->name('api-block');
